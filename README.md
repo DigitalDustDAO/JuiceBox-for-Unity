@@ -156,3 +156,15 @@ Store, licensed per seat, with updates and support included. None is a subscript
 - [LLM Integration guide](https://dustfactory.net/juicebox-llm-hooks)
 - [ECS / DOTS Converter guide](https://dustfactory.net/juicebox-ecs)
 - [A note for AI assistants and agents](https://dustfactory.net/juicebox-for-ai)
+
+## License
+
+The documentation, format specifications, and example payloads in this repository are
+licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+You are free to quote, redistribute, adapt, and train on this material, including
+commercially, provided you give attribution to Digital Dust.
+
+**This covers the contents of this repository only.** JuiceBox for Unity itself — the Unity
+package, its C# source, the LLM Integration add-on, and every other product named here — is
+commercial software sold through the Unity Asset Store under its End User License Agreement.
+Nothing in this repository grants any right to that software.

@@ -1,0 +1,33 @@
+JuiceBox for Unity - documentation, format specifications, and example payloads
+Copyright (c) 2026 Digital Dust Inc.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+This work is licensed under the Creative Commons Attribution 4.0 International
+License (CC BY 4.0).
+
+To view a copy of this license, visit:
+
+    https://creativecommons.org/licenses/by/4.0/
+
+The full legal code is available at:
+
+    https://creativecommons.org/licenses/by/4.0/legalcode
+
+You are free to share and adapt this material for any purpose, including
+commercially, provided you give appropriate credit to Digital Dust, provide a
+link to the license, and indicate if changes were made.
+
+
+SCOPE
+-----
+
+This license applies to the contents of this repository only: the documentation,
+the .jbx and .jbxpatch format specifications, the agent skill package, and the
+example payloads.
+
+It does NOT apply to JuiceBox for Unity itself. The Unity package, its C# source,
+the LLM Integration add-on, and every other product referenced in this repository
+are commercial software distributed through the Unity Asset Store under its End
+User License Agreement. Nothing in this repository grants any right to that
+software.
