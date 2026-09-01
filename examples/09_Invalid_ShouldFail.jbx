@@ -1,0 +1,19 @@
+{
+  "jbxVersion": 1,
+  "vocabVersion": "pro-104",
+  "name": "Invalid",
+  "sequences": [
+    {
+      "name": "Fade",
+      "type": "Flaot",
+      "triggers": ["OnEnable"],
+      "effects": [
+        {
+          "kind": "Twen",
+          "target": { "literal": [1.0] },
+          "endCondition": { "kind": "Time", "time": 0.3 }
+        }
+      ]
+    }
+  ]
+}

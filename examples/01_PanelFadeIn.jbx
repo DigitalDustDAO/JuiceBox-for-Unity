@@ -1,0 +1,49 @@
+{
+  "jbxVersion": 1,
+  "vocabVersion": "pro-104",
+  "name": "PanelFadeIn",
+  "sequences": [
+    {
+      "name": "Alpha",
+      "type": "Float",
+      "triggers": [
+        "OnEnable"
+      ],
+      "property": {
+        "setStartingValue": {
+          "binding": {
+            "mode": "RelativeStatic",
+            "class": "JuiceBox.StandardFunctions",
+            "method": "GetMaterialAlpha",
+            "descriptor": "./"
+          }
+        },
+        "onUpdate": {
+          "binding": {
+            "mode": "RelativeStatic",
+            "class": "JuiceBox.StandardFunctions",
+            "method": "SetMaterialAlpha",
+            "descriptor": "./"
+          }
+        }
+      },
+      "effects": [
+        {
+          "kind": "Tween",
+          "target": {
+            "literal": [
+              1.0
+            ]
+          },
+          "endCondition": {
+            "kind": "Time",
+            "time": 0.3
+          },
+          "easing": {
+            "function": "Pow2Out"
+          }
+        }
+      ]
+    }
+  ]
+}

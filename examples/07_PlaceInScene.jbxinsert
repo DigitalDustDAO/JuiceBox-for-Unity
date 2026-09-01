@@ -1,0 +1,8 @@
+{
+  "jbxInsertVersion": 1,
+  "vocabVersion": "pro-104",
+
+  "target": "/Canvas/StartButton",
+
+  "definition": "Assets/JuiceBox Definitions/ButtonPunch.asset"
+}

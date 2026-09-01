@@ -1,0 +1,54 @@
+{
+  "jbxVersion": 1,
+  "vocabVersion": "pro-104",
+  "name": "Hover",
+
+  "combiners": [
+    {
+      "type": "Vector3",
+      "nodeId": 1,
+      "enabled": true,
+      "getInitialValue": {
+        "binding": { "mode": "RelativeInstance", "method": "get_localPosition", "descriptor": "./" }
+      },
+      "onUpdate": {
+        "binding": { "mode": "RelativeInstance", "method": "set_localPosition", "descriptor": "./" }
+      }
+    }
+  ],
+
+  "sequences": [
+    {
+      "name": "Bob",
+      "type": "Vector3",
+      "combiner": 1,
+      "loop": "Yoyo",
+      "triggers": ["OnEnable"],
+      "effects": [
+        {
+          "kind": "Tween",
+          "target": { "literal": [0.0, 0.25, 0.0] },
+          "easing": { "function": "SineInOut" },
+          "endCondition": { "kind": "Time", "time": 1.5 }
+        }
+      ]
+    },
+
+    {
+      "name": "Jitter",
+      "type": "Vector3",
+      "combiner": 1,
+      "loop": "Loop",
+      "triggers": ["OnEnable"],
+      "effects": [
+        {
+          "kind": "Shake",
+          "amplitude": { "literal": [0.03, 0.03, 0.0] },
+          "frequency": 18.0,
+          "waveform": "Sine",
+          "endCondition": { "kind": "Time", "time": 1.0 }
+        }
+      ]
+    }
+  ]
+}

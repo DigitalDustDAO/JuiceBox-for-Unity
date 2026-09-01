@@ -1,0 +1,105 @@
+{
+  "jbxVersion": 1,
+  "vocabVersion": "pro-104",
+  "name": "ButtonPunch",
+  "sequences": [
+    {
+      "name": "Scale",
+      "type": "Vector2",
+      "triggers": [
+        "Manual"
+      ],
+      "property": {
+        "setStartingValue": {
+          "binding": {
+            "mode": "RelativeStatic",
+            "class": "JuiceBox.StandardFunctions",
+            "method": "GetLocalScaleXY",
+            "descriptor": "./"
+          }
+        },
+        "onUpdate": {
+          "binding": {
+            "mode": "RelativeStatic",
+            "class": "JuiceBox.StandardFunctions",
+            "method": "SetLocalScaleXY",
+            "descriptor": "./"
+          }
+        }
+      },
+      "effects": [
+        {
+          "kind": "Tween",
+          "target": {
+            "literal": [
+              1.25,
+              1.25
+            ]
+          },
+          "endCondition": {
+            "kind": "Time",
+            "time": 0.08
+          },
+          "easing": {
+            "function": "Pow2Out"
+          }
+        },
+        {
+          "kind": "Swing",
+          "target": {
+            "literal": [
+              1.0,
+              1.0
+            ]
+          },
+          "endCondition": {
+            "kind": "WithinRange",
+            "range": 0.01
+          }
+        }
+      ]
+    },
+    {
+      "name": "IconShake",
+      "type": "Float",
+      "triggers": [
+        "Manual"
+      ],
+      "loop": "Loop",
+      "property": {
+        "setStartingValue": {
+          "binding": {
+            "mode": "RelativeStatic",
+            "class": "JuiceBox.StandardFunctions",
+            "method": "GetRectTransformZRotation",
+            "descriptor": "Icon"
+          }
+        },
+        "onUpdate": {
+          "binding": {
+            "mode": "RelativeStatic",
+            "class": "JuiceBox.StandardFunctions",
+            "method": "SetRectTransformZRotation",
+            "descriptor": "Icon"
+          }
+        }
+      },
+      "effects": [
+        {
+          "kind": "Shake",
+          "amplitude": {
+            "literal": [
+              6.0
+            ]
+          },
+          "frequency": 12,
+          "waveform": "Sine",
+          "endCondition": {
+            "kind": "Time",
+            "time": 0.5
+          }
+        }
+      ]
+    }
+  ]
+}

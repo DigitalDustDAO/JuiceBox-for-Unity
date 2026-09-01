@@ -1,0 +1,65 @@
+{
+  "jbxVersion": 1,
+  "vocabVersion": "pro-104",
+  "name": "ParamDash",
+  "sequences": [
+    {
+      "name": "Dash",
+      "type": "Vector3",
+      "triggers": [
+        "Manual"
+      ],
+      "instanceParams": [
+        {
+          "name": "destination",
+          "type": "Vector3",
+          "value": [
+            2.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "speed",
+          "type": "Float",
+          "value": [
+            8.0
+          ]
+        }
+      ],
+      "property": {
+        "setStartingValue": {
+          "binding": {
+            "mode": "RelativeInstance",
+            "method": "get_position",
+            "descriptor": "./"
+          }
+        },
+        "onUpdate": {
+          "binding": {
+            "mode": "RelativeInstance",
+            "method": "set_position",
+            "descriptor": "./"
+          }
+        }
+      },
+      "effects": [
+        {
+          "kind": "Follow",
+          "target": {
+            "instanceParam": "destination"
+          },
+          "slots": {
+            "Speed": {
+              "instanceParam": "speed"
+            }
+          },
+          "endCondition": {
+            "kind": "WithinRange",
+            "range": 0.01
+          }
+        }
+      ]
+    }
+  ]
+}

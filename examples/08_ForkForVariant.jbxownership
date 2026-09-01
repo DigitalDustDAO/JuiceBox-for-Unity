@@ -1,0 +1,8 @@
+{
+  "jbxOwnershipVersion": 1,
+  "vocabVersion": "pro-104",
+
+  "op": "makeUnique",
+
+  "target": "/Canvas/BossHealthBar"
+}

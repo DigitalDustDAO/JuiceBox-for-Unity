@@ -1,0 +1,53 @@
+{
+  "jbxVersion": 1,
+  "vocabVersion": "pro-104",
+  "name": "CompanionFollow",
+  "sequences": [
+    {
+      "name": "Position",
+      "type": "Vector3",
+      "triggers": [
+        "OnStart"
+      ],
+      "property": {
+        "setStartingValue": {
+          "binding": {
+            "mode": "RelativeInstance",
+            "method": "get_position",
+            "descriptor": "./"
+          }
+        },
+        "onUpdate": {
+          "binding": {
+            "mode": "RelativeInstance",
+            "method": "set_position",
+            "descriptor": "./"
+          }
+        }
+      },
+      "effects": [
+        {
+          "kind": "Follow",
+          "speed": 4.0,
+          "target": {
+            "binding": {
+              "mode": "RelativeInstance",
+              "method": "get_position",
+              "descriptor": "../Player"
+            }
+          },
+          "endCondition": {
+            "kind": "Condition",
+            "condition": {
+              "binding": {
+                "mode": "RelativeInstance",
+                "method": "IsDismissed",
+                "descriptor": "./"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "jbxVersion": 1,
+  "vocabVersion": "pro-104",
+  "name": "Heartbeat",
+
+  "animation": {
+    "timescale": 1.0,
+    "whenDisabled": "Pause",
+    "whenOffscreen": "Pause"
+  },
+
+  "sequences": [
+    {
+      "name": "Pulse",
+      "type": "Vector2",
+      "loop": "Loop",
+      "triggers": ["OnEnable"],
+      "property": {
+        "setStartingValue": {
+          "binding": { "mode": "RelativeStatic", "class": "JuiceBox.StandardFunctions", "method": "GetLocalScaleXY", "descriptor": "./" }
+        },
+        "onUpdate": {
+          "binding": { "mode": "RelativeStatic", "class": "JuiceBox.StandardFunctions", "method": "SetLocalScaleXY", "descriptor": "./" }
+        }
+      },
+      "effects": [
+        {
+          "kind": "Tween",
+          "target": { "literal": [1.15, 1.15] },
+          "easing": {
+            "curve": [
+              { "t": 0.0, "v": 0.0, "outTangent": 0.0 },
+              { "t": 0.35, "v": 1.0 },
+              { "t": 1.0, "v": 0.0, "inTangent": 0.0 }
+            ]
+          },
+          "endCondition": { "kind": "Time", "time": 0.9 }
+        }
+      ]
+    }
+  ]
+}
