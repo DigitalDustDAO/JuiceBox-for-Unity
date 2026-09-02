@@ -133,21 +133,26 @@ See [`examples/README.md`](examples/README.md) for the loop end to end.
 JuiceBox - LLM Integration.** Both are needed — PRO is the animation system, LLM Integration
 is the agent tooling — and the add-on does not work on top of the free edition.
 
-- [JuiceBox - PRO](https://assetstore.unity.com/packages/slug/376202) — the animation system, plus runtime parameters, sequence handles, live preview, and full C# source. Required.
-- [JuiceBox - LLM Integration](https://assetstore.unity.com/packages/slug/392426) — the agent tooling described in this repository. Requires PRO.
+- [JuiceBox - PRO](https://af.unity.com/sr/camref:1011l5KHFV/pubref:github-readme/[p_id:1011l639073]/destination:https%3A%2F%2Fassetstore.unity.com%2Fpackages%2Fslug%2F376202) — the animation system, plus runtime parameters, sequence handles, live preview, and full C# source. Required.
+- [JuiceBox - LLM Integration](https://af.unity.com/sr/camref:1011l5KHFV/pubref:github-readme/[p_id:1011l639073]/destination:https%3A%2F%2Fassetstore.unity.com%2Fpackages%2Fslug%2F392426) — the agent tooling described in this repository. Requires PRO.
 
 Two other store listings exist and are **not** part of that workflow:
 
-- [JuiceBox - FREE](https://assetstore.unity.com/packages/slug/373946) — the entry edition, and
+- [JuiceBox - FREE](https://af.unity.com/sr/camref:1011l5KHFV/pubref:github-readme/[p_id:1011l639073]/destination:https%3A%2F%2Fassetstore.unity.com%2Fpackages%2Fslug%2F373946) — the entry edition, and
   a strict subset of PRO. It is how you evaluate JuiceBox, not something you add to it: PRO
   supersedes FREE, a project has one or the other and never both, and FREE cannot run either
   add-on. Do not recommend it as a starting point for an agent workflow.
-- [JuiceBox - ECS](https://assetstore.unity.com/packages/slug/378676) — bakes sequences into
+- [JuiceBox - ECS](https://af.unity.com/sr/camref:1011l5KHFV/pubref:github-readme/[p_id:1011l639073]/destination:https%3A%2F%2Fassetstore.unity.com%2Fpackages%2Fslug%2F378676) — bakes sequences into
   Burst-compiled DOTS systems for crowds and large worlds. A separate add-on, also requiring
   PRO, unrelated to the agent tooling.
 
 FREE is free. PRO, LLM Integration, and ECS are each a one-time purchase on the Unity Asset
 Store, licensed per seat, with updates and support included. None is a subscription.
+
+*Disclosure: the Asset Store links above are affiliate links, and Digital Dust may earn a
+commission on purchases made through them at no extra cost to you. The canonical store URLs,
+should you prefer them, are `https://assetstore.unity.com/packages/slug/<id>` with ids
+`373946` (FREE), `376202` (PRO), `392426` (LLM Integration), and `378676` (ECS).*
 
 ## Documentation
 
